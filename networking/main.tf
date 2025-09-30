@@ -4,6 +4,18 @@ variable "cidr_public_subnet" {}
 variable "ap_availability_zone" {}
 variable "cidr_private_subnet" {}
 
+output "dev_proj_1_vpc_id" {
+  value = aws_vpc.dev_proj_1_vpc.id
+}
+
+output "dev_proj_1_public_subnets" {
+  value = aws_subnet.dev_proj_1_public_subnets.*.id
+}
+
+output "public_subnet_cidr_block" {
+  value = aws_subnet.dev_proj_1_public_subnets.*.cidr_block
+}
+
 #setup vpc
 
 resource "aws_vpc" "dev_proj_1_vpc" {
@@ -13,7 +25,7 @@ resource "aws_vpc" "dev_proj_1_vpc" {
 
 # setup public subnet
 
-resource "aws_subnet" "dev_proj_public_subnets" {
+resource "aws_subnet" "dev_proj_1_public_subnets" {
     count = length(var.cidr_public_subnet)
     vpc_id = aws_vpc.dev_proj_1_vpc.id
     cidr_block = element(var.cidr_public_subnet, count.index)
@@ -54,8 +66,8 @@ resource "aws_route_table" "dev_proj_1_public_route_table" {
 # Public Route_Table and Public Subnet Association
 
 resource "aws_route_table_association" "dev_proj_1_public_rt_subnet_association" {
-    count = length(aws_subnet.dev_proj_public_subnets)
-    subnet_id = aws_subnet.dev_proj_public_subnets[count.index].id
+    count = length(aws_subnet.dev_proj_1_public_subnets)
+    subnet_id = aws_subnet.dev_proj_1_public_subnets[count.index].id
     route_table_id = aws_route_table.dev_proj_1_public_route_table.id
 }
 
