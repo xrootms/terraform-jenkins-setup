@@ -11,7 +11,6 @@ output "sg_ec2_jenkins_port_8080" {
   value = aws_security_group.ec2_jenkins_port_8080.id
 }
 
-
 #SG for ports: 22, 80, 443
 
 resource "aws_security_group" "ec2_sg_ssh_http_https" {
@@ -20,7 +19,6 @@ resource "aws_security_group" "ec2_sg_ssh_http_https" {
   description = "Enable the Port 22(SSH), Port 80(http) & port 443(https)"
 
   #Allow all outbound traffic 
-  
   egress {
     from_port   = 0
     to_port     = 0
@@ -32,7 +30,6 @@ resource "aws_security_group" "ec2_sg_ssh_http_https" {
 }
 
 #Ingress rules using count
-
 resource "aws_security_group_rule" "sg_ingress" {
   count             = length(var.sg_ports)
   type              = "ingress"
@@ -46,7 +43,6 @@ resource "aws_security_group_rule" "sg_ingress" {
 
 
 #SG for jenkins port 8080
-
 resource "aws_security_group" "ec2_jenkins_port_8080" {
   name        = var.ec2_jenkins_sg_name
   description = "Enable the Port 8080 for jenkins"
