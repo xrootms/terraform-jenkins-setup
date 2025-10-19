@@ -8,7 +8,7 @@ Before running Terraform:
 - Terraform v1.5+  
 - AWS CLI configured with proper IAM credentials  
 - A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
-- Hosted Zone created in Route 53 (ex:- `hosted zone name: techsaif.gzz.io`)  
+- Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)  
 - Name servers updated at the domain registrar 
 
 ## Infrastructure Components
@@ -28,14 +28,9 @@ Before running Terraform:
 
 ---
 ## 🌐 Domain Configuration
-
-- A hosted zone named **`techsaif.gzz.io`** was **created manually** in Route 53.  
-- The **4 name servers (NS)** provided by Route 53 were **updated at the domain registrar** (the domain provider where the domain was purchased).
-- 
 After successful deployment:
-The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
-Ensure DNS propagation is complete (can take up to 30 minutes).
-
+- The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
+- Ensure DNS propagation is complete (can take up to 30 minutes).
 To verify:
 ```bash
 dig jenkins.techsaif.gzz.io
