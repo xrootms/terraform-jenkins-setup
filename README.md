@@ -46,8 +46,14 @@ An ACM Certificate is created for: jenkins.techsaif.gzz.io
 - The certificate is attached to the Application Load Balancer (ALB) for HTTPS traffic.
 
 ### ⚙️ Jenkins Installation (User Data)
+- What it does:
 
-- During EC2 instance creation, user data script automatically installs and configures Jenkins and Terraform.
+- Updates packages and installs OpenJDK 17 (required by Jenkins).
+- Adds Jenkins’ official repository and installs Jenkins.
+- Downloads and installs Terraform v1.13.3.
+- Moves Terraform to /usr/local/bin for global access.
+- Once EC2 launches, Jenkins runs automatically at:
+http://<EC2-Public-IP>:8080 (later accessed via ALB domain)
   
 ### 🌍 Accessing Jenkins
 
