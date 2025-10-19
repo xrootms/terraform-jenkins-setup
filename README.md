@@ -27,6 +27,11 @@ Before running Terraform:
 
 
 ---
+## 🌐 Domain Configuration
+
+- A hosted zone named **`techsaif.gzz.io`** was **created manually** in Route 53.  
+- The **4 name servers (NS)** provided by Route 53 were **updated at the domain registrar** (the domain provider where the domain was purchased).  
+- This ensures that traffic to `jenkins.techsaif.gzz.io` is correctly routed to AWS.
 
 ## 🌍 Accessing Jenkins
 
