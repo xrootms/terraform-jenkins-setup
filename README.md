@@ -14,16 +14,16 @@ Before running Terraform:
 ## Infrastructure Components
 - The Terraform module provisions all AWS resources automatically.
   
-| Component                   | Directory                                    | Description                                                                  |
-| --------------------------- | -------------------------------------------- | ---------------------------------------------------------------------------- |
-| **Networking**              | `networking/main.tf`                         | Creates VPC, subnets, route tables, and Internet Gateway                     |
-| **Security Groups**         | `security-groups/main.tf`                    | Defines inbound/outbound rules for Jenkins and ALB                           |
-| **Load Balancer**           | `load-balancer/main.tf`                      | Creates ALB, target groups, and listeners                                    |
-| **Target Group**            | `load-balancer-target-group/main.tf`         | Attaches EC2 instance to the target group                                    |
-| **Certificate Manager**     | `certificate-manager/main.tf`                | Issues and validates ACM SSL certificate via DNS                             |
-| **Hosted Zone Records**     | `hosted-zone/main.tf`                        | Creates DNS records for domain and subdomain (e.g., jenkins.techsaif.gzz.io) |
-| **EC2 Instance (Jenkins)**  | `jenkins/main.tf`                            | Launches EC2 instance and runs Jenkins installer script                      |
-| **Jenkins Setup Script**    | `jenkins-runner-script/jenkins-installer.sh` | Installs Jenkins and dependencies automatically on EC2 startup               |
+| Component                       | Directory                                    | Description                                                                      |
+| ------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------- |
+| **Networking**                  | `networking/main.tf`                         | Creates VPC, subnets, route tables, and Internet Gateway                         |
+| **Security Groups**             | `security-groups/main.tf`                    | Defines inbound/outbound rules for Jenkins and ALB                               |
+| **Load Balancer**               | `load-balancer/main.tf`                      | Creates ALB, target groups, and listeners                                        |
+| **Target Group**                | `load-balancer-target-group/main.tf`         | Attaches EC2 instance to the target group                                        |
+| **Certificate Manager**         | `certificate-manager/main.tf`                | Issues and validates ACM SSL certificate via DNS                                 |
+| **Hosted Zone Records**         | `hosted-zone/main.tf`                        | Creates DNS records for domain and subdomain (e.g., jenkins.techsaif.gzz.io)     |
+| **EC2 Instance (Jenkins)**      | `jenkins/main.tf`                            | Launches EC2 instance and runs Jenkins installer script                          |
+| **Jenkins Setup Script**        | `jenkins-runner-script/jenkins-installer.sh` | Installs Jenkins and dependencies automatically on EC2 startup                   |
 
 
 ---
