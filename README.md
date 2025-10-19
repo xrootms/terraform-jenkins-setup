@@ -1,7 +1,7 @@
 # 🚀 Jenkins Server on AWS (Terraform Deployment)
 
-This project provisions a **Jenkins CI/CD server** on **AWS EC2** using **Terraform**.  
-It includes complete infrastructure setup — from networking to domain configuration — ensuring a production-ready environment accessible via a custom domain.
+This project automates the deployment of a Jenkins server behind an **Application Load Balancer (ALB)** with a valid **SSL certificate (ACM)**, using Terraform
+It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.
 
 ---
 
