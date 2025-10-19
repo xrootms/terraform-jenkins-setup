@@ -27,10 +27,13 @@ Before running Terraform:
 
 
 ---
-## 🌐 Domain Configuration
-After successful deployment:
+## After successful deployment:
+
+🌐 Domain Configuration:
+
 - The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
 - Ensure DNS propagation is complete (can take up to 30 minutes).
+- 
 To verify:
 ```bash
 dig jenkins.techsaif.gzz.io
