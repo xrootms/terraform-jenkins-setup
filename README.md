@@ -4,12 +4,16 @@ This project automates the deployment of a Jenkins server behind an **Applicatio
 It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.
 
 ---
-## 🏗️ Terraform Infrastructure
-### Step 1: Created Manually
-- A hosted zone named **`techsaif.gzz.io`** was **created manually** in Route 53.  
-- The **4 name servers (NS)** provided by Route 53 were **updated at the domain registrar** (the domain provider where the domain was purchased).  
+## 🧾 Prerequisites
 
-### step 2: Created via Terraform
+Before running Terraform:
+- Terraform v1.5+  
+- AWS CLI configured with proper IAM credentials  
+- A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
+- Hosted Zone created in Route 53 (ex:- `hosted zone name: techsaif.gzz.io`)  
+- Name servers updated at the domain registrar 
+
+## 🏗️ Infrastructure Components
 - The Terraform module provisions all AWS resources automatically.
   
 | Component                   | Directory                                    | Description                                                                  |
