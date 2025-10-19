@@ -108,17 +108,30 @@ terraform destroy -auto-approve
 
 ```
 terraform-jenkins/
+├── certificate-manager/
+│   └── main.tf
+├── hosted-zone/
+│   └── main.tf
+├── jenkins/
+│   └── main.tf
+├── jenkins-runner-script/
+│   └── jenkins-installer.sh
+├── load-balancer/
+│   └── main.tf
+├── load-balancer-target-group/
+│   └── main.tf
+├── networking/
+│   └── main.tf
+├── security-groups/
+│   └── main.tf
 ├── main.tf
-├── variables.tf
 ├── outputs.tf
-├── userdata.sh
-├── modules/
-│   ├── vpc/
-│   ├── ec2/
-│   ├── alb/
-│   ├── acm/
-│   └── route53/
-└── README.md
+├── provider.tf
+├── variables.tf
+├── terraform.tfvars
+├── README.md
+└── .gitignore
+
 ```
 
 ---
