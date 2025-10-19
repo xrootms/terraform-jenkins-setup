@@ -30,7 +30,16 @@ Before running Terraform:
 ## 🌐 Domain Configuration
 
 - A hosted zone named **`techsaif.gzz.io`** was **created manually** in Route 53.  
-- The **4 name servers (NS)** provided by Route 53 were **updated at the domain registrar** (the domain provider where the domain was purchased).  
+- The **4 name servers (NS)** provided by Route 53 were **updated at the domain registrar** (the domain provider where the domain was purchased).
+- 
+After successful deployment:
+The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
+Ensure DNS propagation is complete (can take up to 30 minutes).
+
+To verify:
+```bash
+dig jenkins.techsaif.gzz.io
+```
 
 
 ## 🌍 Accessing Jenkins
