@@ -11,6 +11,7 @@ It provisions all networking, security, and application components, integrating 
 
 ### step 2: Created via Terraform
 - The Terraform module provisions all AWS resources automatically.
+  
 | Component                   | Directory                                    | Description                                                                  |
 | --------------------------- | -------------------------------------------- | ---------------------------------------------------------------------------- |
 | **Networking**              | `networking/main.tf`                         | Creates VPC, subnets, route tables, and Internet Gateway                     |
