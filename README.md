@@ -126,21 +126,11 @@ terraform destroy
 ```
 
 ---
-
-## 💡 Notes
-
-- DNS propagation may take up to 30 minutes after updating name servers.  
-- You can manually verify DNS records using:
-  ```bash
-  dig ns techsaif.gzz.io
-  dig jenkins.techsaif.gzz.io
-  ```
-- Ensure that the ACM certificate is issued **in the same region** as the ALB.
   
 💡 Notes
-ACM and ALB must be in the same AWS region.
-DNS propagation can take up to 30 minutes.
-Verify ACM validation status under AWS Console → Certificate Manager.
+- ACM and ALB must be in the same AWS region.
+- DNS propagation can take up to 30 minutes.
+- Verify ACM validation status under AWS Console → Certificate Manager.
 ---
 
 ## 👨‍💻 Author
