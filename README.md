@@ -5,7 +5,7 @@ It provisions all networking, security, and application components, integrating 
 
 ## Prerequisites
 Before running Terraform:
-- Terraform v1.5+  
+- Terraform v1.3+ recommended
 - AWS CLI configured with proper IAM credentials  
 - A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
 - Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)  
@@ -45,6 +45,10 @@ An ACM Certificate is created for: jenkins.techsaif.gzz.io
 - Validation is done automatically via Route 53 DNS records.
 - The certificate is attached to the Application Load Balancer (ALB) for HTTPS traffic.
 
+### ⚙️ Jenkins Installation (User Data)
+
+- During EC2 instance creation, user data script automatically installs and configures Jenkins and Terraform.
+  
 ### 🌍 Accessing Jenkins
 
 Once Terraform apply completes and DNS propagation finishes:
