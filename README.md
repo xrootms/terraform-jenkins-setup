@@ -4,19 +4,19 @@ This project automates the deployment of a Jenkins server behind an **Applicatio
 It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.
 
 ---
-## 🏗️ Infrastructure Components
-### Created Manually
-Route 53 Hosted Zone: techsaif.gzz.io
-Added manually in AWS Route 53
-Name servers (NS) updated at the domain registrar (where the domain is purchased)
+## 🏗️ Terraform Infrastructure
+### Step 1: Created Manually
+- A hosted zone named **`techsaif.gzz.io`** was **created manually** in Route 53.  
+- The **4 name servers (NS)** provided by Route 53 were **updated at the domain registrar** (the domain provider where the domain was purchased).  
 
-### Created via Terraform
+### step 2: Created via Terraform
+- The Terraform module provisions all AWS resources automatically.
 | Component                   | Directory                                    | Description                                                                  |
 | --------------------------- | -------------------------------------------- | ---------------------------------------------------------------------------- |
 | **Networking**              | `networking/main.tf`                         | Creates VPC, subnets, route tables, and Internet Gateway                     |
 | **Security Groups**         | `security-groups/main.tf`                    | Defines inbound/outbound rules for Jenkins and ALB                           |
 | **Load Balancer**           | `load-balancer/main.tf`                      | Creates ALB, target groups, and listeners                                    |
-| **Target Group Attachment** | `load-balancer-target-group/main.tf`         | Attaches EC2 instance to the target group                                    |
+| **Target Group**            | `load-balancer-target-group/main.tf`         | Attaches EC2 instance to the target group                                    |
 | **Certificate Manager**     | `certificate-manager/main.tf`                | Issues and validates ACM SSL certificate via DNS                             |
 | **Hosted Zone Records**     | `hosted-zone/main.tf`                        | Creates DNS records for domain and subdomain (e.g., jenkins.techsaif.gzz.io) |
 | **EC2 Instance (Jenkins)**  | `jenkins/main.tf`                            | Launches EC2 instance and runs Jenkins installer script                      |
