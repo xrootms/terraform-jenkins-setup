@@ -32,10 +32,11 @@ Before running Terraform:
 🌐 Domain Configuration:
 
 - The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
-- Ensure DNS propagation is complete (can take up to 30 minutes).
-- 
+- DNS propagation may take up to 30 minutes after updating name servers.
+  
 To verify:
 ```bash
+dig ns techsaif.gzz.io
 dig jenkins.techsaif.gzz.io
 ```
 
