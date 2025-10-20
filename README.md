@@ -100,9 +100,8 @@ Once Terraform apply completes and DNS propagation finishes:
 
 ## 🧹 Cleanup
 
-To avoid incurring charges, destroy the infrastructure when no longer needed:
 ```bash
-terraform destroy
+terraform destroy    #To avoid incurring charges, destroy the infrastructure when no longer needed:
 ```
 ---
   
