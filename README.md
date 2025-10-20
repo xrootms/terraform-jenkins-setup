@@ -12,7 +12,7 @@ Before running Terraform:
 - Name servers updated at the domain registrar 
 
 ## Infrastructure Components
-- The Terraform module provisions all AWS resources automatically.
+#### This project provisions:
   
 | Component                       | Directory                                    | Description                                                                      |
 | ------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------- |
