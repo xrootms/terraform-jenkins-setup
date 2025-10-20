@@ -58,8 +58,8 @@ Before running Terraform:
    ```
 
 ## ⚠️ Notes
-- Make sure you have AWS credentials configured (`aws configure`).
 - Never commit `terraform.tfvars` with real secrets to GitHub.
+- Use .gitignore to exclude sensitive files (terraform.tfstate, .tfvars, etc.).
 ---
 ## After successful deployment:
 
