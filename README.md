@@ -105,7 +105,7 @@ terraform destroy    #To avoid incurring charges, destroy the infrastructure whe
 ```
 ---
   
-💡 Notes
+## ⚠️ Notes
 - ACM and ALB must be in the same AWS region.
 - DNS propagation can take up to 30 minutes.
 - Verify ACM validation status under AWS Console → Certificate Manager.
