@@ -96,20 +96,19 @@ Once Terraform apply completes and DNS propagation finishes:
   ```bash
   sudo cat /var/lib/jenkins/secrets/initialAdminPassword
   ```
----
 
 ## 🧹 Cleanup
 
 ```bash
 terraform destroy    #To avoid incurring charges, destroy the infrastructure when no longer needed:
 ```
----
+
   
 ## ⚠️ Notes
 - ACM and ALB must be in the same AWS region.
 - DNS propagation can take up to 30 minutes.
 - Verify ACM validation status under AWS Console → Certificate Manager.
----
+
 
 ## 👨‍💻 Author
 **Saif Uddin**  
