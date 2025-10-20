@@ -36,10 +36,10 @@ Before running Terraform:
    ```
 
 #### 2. Copy and edit variables:
+#### (Update variable values as needed — region, VPC CIDR, domain name, etc.)
    ```bash
    cp terraform.tfvars.example terraform.tfvars
    ```
-   #### (Update variable values as needed — region, VPC CIDR, domain name, etc.)
 
 #### 3. Initialize Terraform:
    ```bash
