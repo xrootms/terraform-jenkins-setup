@@ -35,8 +35,7 @@ Before running Terraform:
    cd terraform-aws-vpc-ec2
    ```
 
-#### 2. Copy and edit variables:
-#### (Update variable values as needed — region, VPC CIDR, domain name, etc.)
+#### 2. Copy and edit variables: (Update variable values as needed — region, VPC CIDR, domain name, etc.)
    ```bash
    cp terraform.tfvars.example terraform.tfvars
    ```
