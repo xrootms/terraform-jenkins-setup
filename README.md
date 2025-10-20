@@ -96,7 +96,7 @@ Once Terraform apply completes and DNS propagation finishes:
   ```bash
   sudo cat /var/lib/jenkins/secrets/initialAdminPassword
   ```
---
+---
 ### Cleanup
 
 ```bash
