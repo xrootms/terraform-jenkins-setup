@@ -63,7 +63,7 @@ Before running Terraform:
 ---
 ## After successful deployment:
 
-### 🌐 Domain Configuration:
+#### 🌐 Domain Configuration:
 
 - The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
 - DNS propagation may take up to 30 minutes after updating name servers.
@@ -73,13 +73,13 @@ To verify:
 dig ns techsaif.gzz.io
 dig jenkins.techsaif.gzz.io
 ```
-### 🔒 SSL Configuration
+#### 🔒 SSL Configuration
 An ACM Certificate is created for: jenkins.techsaif.gzz.io
 
 - Validation is done automatically via Route 53 DNS records.
 - The certificate is attached to the Application Load Balancer (ALB) for HTTPS traffic.
 
-### ⚙️ Jenkins Installation (User Data)
+#### ⚙️ Jenkins Installation (User Data)
 **What it does:**
 - Updates packages and installs OpenJDK 17 (required by Jenkins).
 - Adds Jenkins’ official repository and installs Jenkins.
@@ -88,7 +88,7 @@ An ACM Certificate is created for: jenkins.techsaif.gzz.io
 - Once EC2 launches, Jenkins runs automatically at:
 http://<EC2-Public-IP>:8080 (later accessed via ALB domain)
   
-### 🌍 Accessing Jenkins
+#### 🌍 Accessing Jenkins
 Once Terraform apply completes and DNS propagation finishes:
 - Open **https://jenkins.techsaif.gzz.io** in your browser.  
 - Retrieve the initial Jenkins admin password from the EC2 instance:
@@ -98,66 +98,12 @@ Once Terraform apply completes and DNS propagation finishes:
   ```
 ---
 
-## 🚀 Terraform Commands
-
-```bash
-# Initialize Terraform
-terraform init
-
-# Validate configuration
-terraform validate
-
-# Preview changes
-terraform plan
-
-# Apply changes
-terraform apply -auto-approve
-
-# Destroy infrastructure
-terraform destroy -auto-approve
-```
-
----
-
-## 📁 Project Structure (Example)
-
-```
-terraform-jenkins/
-├── certificate-manager/
-│   └── main.tf
-├── hosted-zone/
-│   └── main.tf
-├── jenkins/
-│   └── main.tf
-├── jenkins-runner-script/
-│   └── jenkins-installer.sh
-├── load-balancer/
-│   └── main.tf
-├── load-balancer-target-group/
-│   └── main.tf
-├── networking/
-│   └── main.tf
-├── security-groups/
-│   └── main.tf
-├── main.tf
-├── outputs.tf
-├── provider.tf
-├── variables.tf
-├── terraform.tfvars
-├── README.md
-└── .gitignore
-
-```
-
----
-
 ## 🧹 Cleanup
 
 To avoid incurring charges, destroy the infrastructure when no longer needed:
 ```bash
 terraform destroy
 ```
-
 ---
   
 💡 Notes
