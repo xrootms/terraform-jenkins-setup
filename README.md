@@ -57,7 +57,7 @@ Before running Terraform:
    terraform output instance_public_ip
    ```
 
-## ⚠️ Notes
+#### ⚠️ Notes
 - Never commit `terraform.tfvars` with real secrets to GitHub.
 - Use .gitignore to exclude sensitive files (terraform.tfstate, .tfvars, etc.).
 ---
