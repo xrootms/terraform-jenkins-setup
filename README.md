@@ -27,6 +27,39 @@ Before running Terraform:
 
 
 ---
+## 🛠️ How to Use
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/xrootms/terraform-jenkins-setup.git
+   cd terraform-aws-vpc-ec2
+   ```
+
+2. Copy and edit variables:
+   ```bash
+   cp terraform.tfvars.example terraform.tfvars
+   ```
+
+3. Initialize Terraform:
+   ```bash
+   terraform init
+   ```
+
+4. Plan and Apply:
+   ```bash
+   terraform plan
+   terraform apply
+   ```
+
+5. Get EC2 Public IP:
+   ```bash
+   terraform output instance_public_ip
+   ```
+
+## ⚠️ Notes
+- Make sure you have AWS credentials configured (`aws configure`).
+- Never commit `terraform.tfvars` with real secrets to GitHub.
+---
 ## After successful deployment:
 
 ### 🌐 Domain Configuration:
