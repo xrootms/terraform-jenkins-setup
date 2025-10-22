@@ -1,8 +1,16 @@
 # Automated Jenkins Deployment on AWS using Terraform
-This project automates the Jenkins CI/CD environment on AWS — using Terraform as Infrastructure-as-Code (IaC).
+This project automates the Jenkins CI/CD environment on AWS — using Terraform as Infrastructure-as-Code (IaC). It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.
+
 <p align="center">
   <img src="./image/diagram-infra-img.jpg" alt="LEMP Diagram" width="600">
 </p>
+
+## Project Overview
+- This Terraform setup builds a fully functional Jenkins environment with:
+- Scalable AWS infrastructure (VPC, subnets, security groups)
+- Automated Jenkins installation via user data script
+- Load balancing and HTTPS termination using AWS ALB + ACM
+- Custom domain integration using Route 53
 
 ## Prerequisites
 ### Before Running Terraform
@@ -15,24 +23,7 @@ Make sure you have the following prerequisites ready:
   > Example: `hosted zone name: techsaif.gzz.io`
 - **Name servers** updated at your domain registrar
 
-
-## Infrastructure Components
-#### This project provisions:
-  
-| Component                       | Directory                                    | Description                                                                      |
-| ------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------- |
-| **Networking**                  | `networking/main.tf`                         | Creates VPC, subnets, route tables, and Internet Gateway                         |
-| **Security Groups**             | `security-groups/main.tf`                    | Defines inbound/outbound rules for Jenkins and ALB                               |
-| **Load Balancer**               | `load-balancer/main.tf`                      | Creates ALB, target groups, and listeners                                        |
-| **Target Group**                | `load-balancer-target-group/main.tf`         | Attaches EC2 instance to the target group                                        |
-| **Certificate Manager**         | `certificate-manager/main.tf`                | Issues and validates ACM SSL certificate via DNS                                 |
-| **Hosted Zone Records**         | `hosted-zone/main.tf`                        | Creates DNS records for domain and subdomain (e.g., jenkins.techsaif.gzz.io)     |
-| **EC2 Instance (Jenkins)**      | `jenkins/main.tf`                            | Launches EC2 instance and runs Jenkins installer script                          |
-| **Jenkins Setup Script**        | `jenkins-runner-script/jenkins-installer.sh` | Installs Jenkins and dependencies automatically on EC2 startup                   |
-
-
----
-## 🛠️ How to Use
+## How to Use
 
 #### 1. Clone the repo:
    ```bash
