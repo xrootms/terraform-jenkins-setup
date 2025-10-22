@@ -60,8 +60,10 @@
  
 ```
 #### SSL Configuration
-An ACM Certificate is created for: jenkins.techsaif.gzz.io
+
+An ACM Certificate is created for: **jenkins.techsaif.gzz.io**
 - Validation is done automatically via Route 53 DNS records.
+
 <p align="center">
   <img src="./image/ACM-arn-copy.png" alt="LEMP Diagram" width="900">
 </p>
@@ -95,8 +97,8 @@ terraform destroy    #To avoid incurring charges, destroy the infrastructure whe
   
 ### Notes
 *- ACM and ALB must be in the same AWS region.*
-- DNS propagation can take up to 30 minutes.
-- Verify ACM validation status under AWS Console → Certificate Manager.
+*- DNS propagation can take up to 30 minutes.*
+*- Verify ACM validation status under AWS Console → Certificate Manager.*
 
 
 ### 👨‍💻 Author
