@@ -1,7 +1,7 @@
 # Automated Jenkins Deployment on AWS using Terraform
 This project automates the Jenkins CI/CD environment on AWS — using Terraform as Infrastructure-as-Code (IaC).
 <p align="center">
-  <img src="./image/DiAgram3.jpg" alt="LEMP Diagram" width="600">
+  <img src="./image/diagram-infra-img.jpg" alt="LEMP Diagram" width="600">
 </p>
 
 ## Prerequisites
