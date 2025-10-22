@@ -66,9 +66,8 @@ Make sure you have the following prerequisites ready:
 #### Domain Configuration:
 
 - The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
-- 
 <p align="center">
-  <img src="./image/Hoted-zone-img.jpg" alt="LEMP Diagram" width="900">
+  <img src="./image/Hoted-zone-img.jpg" alt="LEMP Diagram" width="1000">
 </p>
 
 - DNS propagation may take up to 30 minutes after updating name servers.
@@ -86,10 +85,6 @@ An ACM Certificate is created for: jenkins.techsaif.gzz.io
 </p>
 
 - The certificate is attached to the Application Load Balancer (ALB) for HTTPS traffic.
- 
-<p align="center">
-  <img src="./image/acm-copy.png" alt="LEMP Diagram" width="900">
-</p>
 
 ---
 
