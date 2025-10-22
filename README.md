@@ -11,32 +11,15 @@ Before running Terraform:
 - A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
 - Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)
 
-  <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="./image/hostedzoneimage.png" 
-       alt="LEMP Diagram 1" 
-       width="600" 
-       style="border: 2px solid #000; border-radius: 8px;">
-  <img src="./image/hostedzoneimage2.png" 
-       alt="LEMP Diagram 2" 
-       width="600" 
-       style="border: 2px solid #000; border-radius: 8px;">
-</div>
-
-
 <p align="center">
-  <img src="./image/hostedzoneimage.png" 
-       alt="LEMP Diagram 1" 
-       width="300" 
-       style="border: 2px solid #000; border-radius: 8px; margin: 5px;">
-  <img src="./image/hostedzoneimage2.png" 
-       alt="LEMP Diagram 2" 
-       width="800" 
-       style="border: 2px solid #000; border-radius: 8px; margin: 5px;">
+  <img src="./image/hostedzoneimage2.png" alt="LEMP Diagram" width="600">
 </p>
 
+- Name servers updated at the domain registrar
 
-
-- Name servers updated at the domain registrar 
+  <p align="center">
+  <img src="./image/registarupdateimage.png" alt="LEMP Diagram" width="600">
+</p>
 
 ## Infrastructure Components
 #### This project provisions:
