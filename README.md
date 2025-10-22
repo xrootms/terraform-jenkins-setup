@@ -16,13 +16,13 @@ Before running Terraform:
 </p>
 
 <p align="center">
-  <img src="./image/Screenshot 2025-10-20 221909.png" 
+  <img src="./image/Screenshot 2025-10-20 221736.png" 
        alt="LEMP Diagram 1" 
        width="300" 
        style="border: 2px solid #000; border-radius: 8px; margin: 5px;">
-  <img src="./image/Screenshot 2025-10-20 221736.png" 
+  <img src="./image/Screenshot 2025-10-20 221909.png" 
        alt="LEMP Diagram 2" 
-       width="300" 
+       width="600" 
        style="border: 2px solid #000; border-radius: 8px; margin: 5px;">
 </p>
 
