@@ -76,15 +76,15 @@ dig jenkins.techsaif.gzz.io
 #### SSL Configuration
 An ACM Certificate is created for: jenkins.techsaif.gzz.io
 - Validation is done automatically via Route 53 DNS records.
-  <p align="center">
-  <img src="./image/ACMimage.copy.png" alt="LEMP Diagram" width="600">
+<p align="center">
+  <img src="./image/ACM-arn-copy.png" alt="LEMP Diagram" width="600">
 </p>
+
 - The certificate is attached to the Application Load Balancer (ALB) for HTTPS traffic.
-
-
-
-
-
+- 
+<p align="center">
+  <img src="./image/acm-copy.png" alt="LEMP Diagram" width="600">
+</p>
 
 ---
 
