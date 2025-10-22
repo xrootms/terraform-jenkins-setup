@@ -80,7 +80,7 @@ An ACM Certificate is created for: jenkins.techsaif.gzz.io
   <p align="center">
   <img src="./image/ACMimage.png" alt="LEMP Diagram" width="700">
 </p>
-
+---
 #### Jenkins Installation (User Data)
 **What it does:**
 - Updates packages and installs OpenJDK 17 (required by Jenkins).
