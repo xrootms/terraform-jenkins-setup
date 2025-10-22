@@ -1,21 +1,19 @@
 # Automated Jenkins Deployment on AWS using Terraform
-This project automates the Jenkins CI/CD environment on AWS — using Terraform as Infrastructure-as-Code (IaC). It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.
+*This project automates the Jenkins CI/CD environment on AWS — using Terraform as Infrastructure-as-Code (IaC). It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.*
 
 <p align="center">
   <img src="./image/diagram-infra-img.jpg" alt="LEMP Diagram" width="600">
 </p>
 
 ## Project Overview
-- This Terraform setup builds a fully functional Jenkins environment with:
+*This Terraform setup builds a fully functional Jenkins environment with:*
 - Scalable AWS infrastructure (VPC, subnets, security groups)
 - Automated Jenkins installation via user data script
 - Load balancing and HTTPS termination using AWS ALB + ACM
 - Custom domain integration using Route 53
 
 ## Prerequisites
-### Before Running Terraform
-Make sure you have the following prerequisites ready:
-
+*Before Running Terraform, Make sure you have the following prerequisites ready:*
 - **Terraform v1.3+** (recommended)  
 - **AWS CLI** configured with proper IAM credentials  
 - **A registered domain name** (e.g., from GoDaddy, Namecheap, etc.)  
@@ -24,7 +22,6 @@ Make sure you have the following prerequisites ready:
 - **Name servers** updated at your domain registrar
 
 ## How to Use
-
 #### 1. Clone the repo:
    ```bash
    git clone https://github.com/xrootms/terraform-jenkins-setup.git
@@ -112,7 +109,7 @@ terraform destroy    #To avoid incurring charges, destroy the infrastructure whe
 
   
 ### Notes
-- ACM and ALB must be in the same AWS region.
+*- ACM and ALB must be in the same AWS region.*
 - DNS propagation can take up to 30 minutes.
 - Verify ACM validation status under AWS Console → Certificate Manager.
 
