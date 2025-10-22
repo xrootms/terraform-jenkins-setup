@@ -5,23 +5,22 @@
   <img src="./image/diagram-infra-img.jpg" alt="LEMP Diagram" width="600">
 </p>
 
-## Project Overview
+## *Project Overview*
 *This Terraform setup builds a fully functional Jenkins environment with:*
 - Scalable AWS infrastructure (VPC, subnets, security groups)
 - Automated Jenkins installation via user data script
 - Load balancing and HTTPS termination using AWS ALB + ACM
 - Custom domain integration using Route 53
 
-## Prerequisites
+## *Prerequisites*
 *Before Running Terraform, Make sure you have the following prerequisites ready:*
 - **Terraform v1.3+** (recommended)  
 - **AWS CLI** configured with proper IAM credentials  
 - **A registered domain name** (e.g., from GoDaddy, Namecheap, etc.)  
-- **Hosted Zone** created in Route 53  
-  > Example: `hosted zone name: techsaif.gzz.io`
+- **Hosted Zone** created in Route 53  > Example: `hosted zone name: techsaif.gzz.io`
 - **Name servers** updated at your domain registrar
 
-## How to Use
+## *How to Use*
 #### 1. Clone the repo:
    ```bash
    git clone https://github.com/xrootms/terraform-jenkins-setup.git
@@ -44,26 +43,21 @@
    terraform apply
    ```
 
-#### 5. Get EC2 Public IP:
-   ```bash
-   terraform output instance_public_ip
-   ```
+#### 5. Get ssh connection:
+<p align="center">
+  <img src="./image/apply-copy.png" alt="LEMP Diagram" width="600">
+</p>
+
 ---
 ## After successful deployment:
 
 #### Domain Configuration:
-
+- DNS propagation may take up to 30 minutes after updating name servers.
 - The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
 <p align="center">
   <img src="./image/Screenshot 2025-10-23 012719.png" alt="LEMP Diagram" width="1000">
 </p>
-
-- DNS propagation may take up to 30 minutes after updating name servers.
-  
-To verify:
-```bash
-dig ns techsaif.gzz.io
-dig jenkins.techsaif.gzz.io
+ 
 ```
 #### SSL Configuration
 An ACM Certificate is created for: jenkins.techsaif.gzz.io
@@ -75,15 +69,6 @@ An ACM Certificate is created for: jenkins.techsaif.gzz.io
 - The certificate is attached to the Application Load Balancer (ALB) for HTTPS traffic.
 
 ---
-
-#### Jenkins Installation (User Data)
-**What it does:**
-- Updates packages and installs OpenJDK 17 (required by Jenkins).
-- Adds Jenkins’ official repository and installs Jenkins.
-- Downloads and installs Terraform v1.13.3.
-- Moves Terraform to /usr/local/bin for global access.
-- Once EC2 launches, Jenkins runs automatically at:
-http://<EC2-Public-IP>:8080 (later accessed via ALB domain)
   
 #### Accessing Jenkins
 Once Terraform apply completes and DNS propagation finishes:
