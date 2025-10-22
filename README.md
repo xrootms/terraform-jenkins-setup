@@ -96,6 +96,9 @@ Once Terraform apply completes and DNS propagation finishes:
 </p>
 
 - Retrieve the initial Jenkins admin password from the EC2 instance:
+- <p align="center">
+  <img src="./image/ssh.png" alt="LEMP Diagram" width="600">
+</p>
   
   ```bash
   sudo cat /var/lib/jenkins/secrets/initialAdminPassword
