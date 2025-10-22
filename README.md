@@ -59,14 +59,12 @@
 </p>
 
 #### SSL Configuration
-An ACM Certificate is created for: **jenkins.techsaif.gzz.io**
-- Validation is done automatically via Route 53 DNS records.
+An ACM Certificate is created for: **jenkins.techsaif.gzz.io**, Validation is done automatically via Route 53 DNS records. Certificate is attached to the ALB for HTTPS traffic
 
 <p align="center">
   <img src="./image/ACM-arn-copy.png" alt="LEMP Diagram" width="900">
 </p>
 
-- The certificate is attached to the Application Load Balancer (ALB) for HTTPS traffic.
 
 ---
   
@@ -82,8 +80,7 @@ Once Terraform apply completes and DNS propagation finishes:
   <img src="./image/ssh.png" alt="LEMP Diagram" width="600">
 </p>
   
-  ```
-bash
+  ```bash
   sudo cat /var/lib/jenkins/secrets/initialAdminPassword
   ```
 
@@ -96,11 +93,9 @@ terraform destroy    #To avoid incurring charges, destroy the infrastructure whe
 
   
 ### Notes
-*- ACM and ALB must be in the same AWS region.*
-
-*- DNS propagation can take up to 30 minutes.*
-
-*- Verify ACM validation status under AWS Console → Certificate Manager.*
+- *ACM and ALB must be in the same AWS region.*
+- *DNS propagation can take up to 30 minutes.*
+- *Verify ACM validation status under AWS Console → Certificate Manager.*
 
 
 ### 👨‍💻 Author
