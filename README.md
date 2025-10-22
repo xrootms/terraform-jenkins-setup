@@ -14,7 +14,7 @@ Before running Terraform:
 <p align="center">
   <img src="./image/hostedzoneimage.png" 
        alt="LEMP Diagram 1" 
-       width="600" 
+       width="300" 
        style="border: 2px solid #000; border-radius: 8px; margin: 5px;">
   <img src="./image/hostedzoneimage2.png" 
        alt="LEMP Diagram 2" 
