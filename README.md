@@ -11,15 +11,8 @@ Before running Terraform:
 - A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
 - Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)
   
-<style>
-  .img-border {
-    border: 2px solid #333;
-    border-radius: 8px;
-    padding: 4px; /* optional: space between image and border */
-  }
-</style>
 
-<p align="left">
+<p align="center">
   <img src="./image/Screenshot 2025-10-20 221909.png" 
        alt="LEMP Diagram" 
        width="600" 
