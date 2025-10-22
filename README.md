@@ -5,22 +5,7 @@ This project automates the Jenkins CI/CD environment on AWS — using Terraform 
 </p>
 
 ## Prerequisites
-Before running Terraform:
-- Terraform v1.3+ recommended
-- AWS CLI configured with proper IAM credentials  
-- A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
-- Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)
-<p align="center">
-  <img src="./image/hostedzoneimage2.png" alt="LEMP Diagram" width="600">
-</p>
-- Name servers updated at the domain registrar
-<p align="center">
-  <img src="./image/registarupdateimage.png" alt="LEMP Diagram" width="600">
-</p>
-
-
-## 🧩 Before Running Terraform
-
+### Before Running Terraform
 Make sure you have the following prerequisites ready:
 
 - **Terraform v1.3+** (recommended)  
@@ -28,31 +13,7 @@ Make sure you have the following prerequisites ready:
 - **A registered domain name** (e.g., from GoDaddy, Namecheap, etc.)  
 - **Hosted Zone** created in Route 53  
   > Example: `hosted zone name: techsaif.gzz.io`
-
-<p align="center">
-  <img src="./image/hostedzoneimage2.png" alt="Hosted Zone Example" width="600" style="border: 2px solid #000; border-radius: 8px;">
-</p>
-
 - **Name servers** updated at your domain registrar
-
-<p align="center">
-  <img src="./image/registarupdateimage.png" alt="Domain Registrar Update Example" width="600" style="border: 2px solid #000; border-radius: 8px;">
-</p>
-
-- **Hosted Zone** created in Route 53  
-  > Example: `hosted zone name: techsaif.gzz.io`
-
-  <p align="center">
-    <img src="./image/hostedzoneimage2.png" alt="Hosted Zone Example" width="600" style="border:2px solid #000;border-radius:8px;">
-  </p>
-
-<br>
-
-- **Name servers** updated at your domain registrar  
-  <p align="center">
-    <img src="./image/registarupdateimage.png" alt="Domain Registrar Update Example" width="600" style="border:2px solid #000;border-radius:8px;">
-  </p>
-
 
 
 ## Infrastructure Components
@@ -143,7 +104,7 @@ terraform destroy    #To avoid incurring charges, destroy the infrastructure whe
 ```
 
   
-### ⚠️ Notes
+### Notes
 - ACM and ALB must be in the same AWS region.
 - DNS propagation can take up to 30 minutes.
 - Verify ACM validation status under AWS Console → Certificate Manager.
