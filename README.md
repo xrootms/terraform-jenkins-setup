@@ -51,6 +51,11 @@
 ---
 # *After successful deployment:*
 
+## 🔹*Jenkins Installation (User Data)*
+
+- During EC2 instance creation, a user data script automatically installs and configures Jenkins and Terraform.
+Script used: jenkins-runner-script/jenkins-installer.sh
+
 ## 🔹*Domain Configuration:*
 
 - The **ALB DNS** name is mapped to **jenkins.techsaif.gzz.io** using a Route 53 **A record**.
@@ -68,8 +73,6 @@
   <img src="./image/ACM-arn-copy.png" alt="LEMP Diagram" width="900">
 </p>
 
-
----
   
 ## 🔹*Accessing Jenkins:*
 - Once Terraform apply completes and DNS propagation finishes:
@@ -87,14 +90,13 @@
   sudo cat /var/lib/jenkins/secrets/initialAdminPassword
   ```
 
----
 ## 🔹*Cleanup*
 
 ```bash
 terraform destroy    #To avoid incurring charges, destroy the infrastructure when no longer needed:
 ```
 
-  
+---  
 ### *Notes*
 - *ACM and ALB must be in the same AWS region.*
 - *DNS propagation can take up to 30 minutes.*
