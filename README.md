@@ -10,6 +10,7 @@ Before running Terraform:
 - AWS CLI configured with proper IAM credentials  
 - A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
 - Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)
+  
 <style>
   .img-border {
     border: 2px solid #333;
