@@ -45,7 +45,7 @@
 
 #### 5. Get ssh connection:
 <p align="center">
-  <img src="./image/apply-copy.png" alt="LEMP Diagram" width="600">
+  <img src="./image/apply-copy.png" alt="LEMP Diagram" width="900">
 </p>
 
 ---
