@@ -3,15 +3,13 @@ This project automates the Jenkins CI/CD environment on AWS — using Terraform 
 <p align="center">
   <img src="./image/DiAgram3.jpg" alt="LEMP Diagram" width="600">
 </p>
+
 ## Prerequisites
 Before running Terraform:
 - Terraform v1.3+ recommended
 - AWS CLI configured with proper IAM credentials  
 - A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
 - Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)
-<p align="center">
-  <img src="./image/hostedzoneimage2.png" alt="LEMP Diagram" width="600">
-</p>
 - Name servers updated at the domain registrar
   <p align="center">
   <img src="./image/registarupdateimage.png" alt="LEMP Diagram" width="600">
