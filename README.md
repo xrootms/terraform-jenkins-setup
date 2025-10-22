@@ -3,7 +3,7 @@
 This project automates the complete deployment of a Jenkins CI/CD server on AWS EC2 using Terraform.
 It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.
 <p align="center">
-  <img src="./image/diagram.jpg" alt="LEMP Diagram" width="600">
+  <img src="./image/Diagram2.jpg" alt="LEMP Diagram" width="600">
 </p>
 
 ## Prerequisites
