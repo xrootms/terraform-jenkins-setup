@@ -10,14 +10,11 @@ Before running Terraform:
 - AWS CLI configured with proper IAM credentials  
 - A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
 - Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)
-  HZimage.png
+  
   <p align="center">
   <img src="./image/HZimage.png" alt="LEMP Diagram" width="600">
 </p>
 
-<p align="center">
-  <img src="./image/Screenshot 2025-10-20 221909.png, ./image/Screenshot 2025-10-20 221736.png" alt="LEMP Diagram" width="600">
-</p>
 
 <p align="center">
   <img src="./image/hostedzoneimage.png" 
