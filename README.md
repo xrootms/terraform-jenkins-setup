@@ -14,11 +14,11 @@ Before running Terraform:
   <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="./image/hostedzoneimage.png" 
        alt="LEMP Diagram 1" 
-       width="300" 
+       width="600" 
        style="border: 2px solid #000; border-radius: 8px;">
   <img src="./image/hostedzoneimage2.png" 
        alt="LEMP Diagram 2" 
-       width="300" 
+       width="600" 
        style="border: 2px solid #000; border-radius: 8px;">
 </div>
 
