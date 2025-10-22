@@ -9,7 +9,19 @@ Before running Terraform:
 - Terraform v1.3+ recommended
 - AWS CLI configured with proper IAM credentials  
 - A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
-- Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`) 
+- Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)
+
+  <div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="./image/hostedzoneimage.png" 
+       alt="LEMP Diagram 1" 
+       width="300" 
+       style="border: 2px solid #000; border-radius: 8px;">
+  <img src="./image/hostedzoneimage2.png" 
+       alt="LEMP Diagram 2" 
+       width="300" 
+       style="border: 2px solid #000; border-radius: 8px;">
+</div>
+
 
 <p align="center">
   <img src="./image/hostedzoneimage.png" 
