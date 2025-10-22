@@ -3,7 +3,6 @@ This project automates the Jenkins CI/CD environment on AWS — using Terraform 
 <p align="center">
   <img src="./image/DiAgram3.jpg" alt="LEMP Diagram" width="600">
 </p>
-
 ## Prerequisites
 Before running Terraform:
 - Terraform v1.3+ recommended
