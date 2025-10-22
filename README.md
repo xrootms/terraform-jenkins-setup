@@ -51,15 +51,18 @@
 ---
 ## After successful deployment:
 
-🔹**Domain Configuration:**
+## 🔹*Domain Configuration:*
 
-- The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record. DNS propagation may take up to 30 minutes after updating name servers.
+- The **ALB DNS** name is mapped to **jenkins.techsaif.gzz.io** using a Route 53 **A record**.
+- DNS propagation may take up to 30 minutes after updating name servers.
 <p align="center">
   <img src="./image/Screenshot 2025-10-23 012719.png" alt="LEMP Diagram" width="1000">
 </p>
 
-🔹**SSL Configuration:**
-- An ACM Certificate is created for: **jenkins.techsaif.gzz.io**, Validation is done automatically via Route 53 DNS records. Certificate is attached to the ALB for HTTPS traffic
+##🔹*SSL Configuration:*
+- An **ACM** Certificate is created for: **jenkins.techsaif.gzz.io**.
+- Validation is done automatically via Route 53 DNS records.
+- Certificate is attached to the ALB for https traffic.
 
 <p align="center">
   <img src="./image/ACM-arn-copy.png" alt="LEMP Diagram" width="900">
@@ -68,7 +71,7 @@
 
 ---
   
-🔹**Accessing Jenkins:**
+##🔹*Accessing Jenkins:*
 - Once Terraform apply completes and DNS propagation finishes:
 - Open **https://jenkins.techsaif.gzz.io** in your browser.
 - <p align="center">
@@ -85,17 +88,19 @@
   ```
 
 ---
-🔹**Cleanup**
+##🔹*Cleanup*
 
 ```bash
 terraform destroy    #To avoid incurring charges, destroy the infrastructure when no longer needed:
 ```
 
   
-### Notes
+### *Notes*
 - *ACM and ALB must be in the same AWS region.*
 - *DNS propagation can take up to 30 minutes.*
 - *Verify ACM validation status under AWS Console → Certificate Manager.*
+
+  ⭐ If you found this project interesting, consider giving it a star!
 
 
 
