@@ -55,7 +55,7 @@
 
 - The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
 <p align="center">
-  <img src="./image/Hoted-zone-img.jpg" alt="LEMP Diagram" width="1000">
+  <img src="./image/Screenshot 2025-10-23 012719.png" alt="LEMP Diagram" width="1000">
 </p>
 
 - DNS propagation may take up to 30 minutes after updating name servers.
