@@ -49,14 +49,14 @@
 </p>
 
 ---
-# *After successful deployment:*
+## *After successful deployment:*
 
-## 🔹*Jenkins Installation (User Data)*
+### 🔹*Jenkins Installation (User Data)*
 
 - During EC2 instance creation, a user data script automatically installs and configures Jenkins and Terraform.
 Script used: jenkins-runner-script/jenkins-installer.sh
 
-## 🔹*Domain Configuration:*
+### 🔹*Domain Configuration:*
 
 - The **ALB DNS** name is mapped to **jenkins.techsaif.gzz.io** using a Route 53 **A record**.
 
@@ -64,7 +64,7 @@ Script used: jenkins-runner-script/jenkins-installer.sh
   <img src="./image/Screenshot 2025-10-23 012719.png" alt="LEMP Diagram" width="1000">
 </p>
 
-## 🔹*SSL Configuration:*
+### 🔹*SSL Configuration:*
 - An **ACM** Certificate is created for: **jenkins.techsaif.gzz.io** and attached to the ALB for https traffic.
 
 <p align="center">
@@ -72,7 +72,7 @@ Script used: jenkins-runner-script/jenkins-installer.sh
 </p>
 
   
-## 🔹*Accessing Jenkins:*
+### 🔹*Accessing Jenkins:*
 - Once Terraform apply completes and DNS propagation finishes:
 - Open **https://jenkins.techsaif.gzz.io** in your browser.
 - 
