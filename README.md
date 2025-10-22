@@ -77,10 +77,11 @@ dig jenkins.techsaif.gzz.io
 An ACM Certificate is created for: jenkins.techsaif.gzz.io
 - Validation is done automatically via Route 53 DNS records.
 - The certificate is attached to the Application Load Balancer (ALB) for HTTPS traffic.
-  <p align="center">
+<p align="center">
   <img src="./image/ACMimage.png" alt="LEMP Diagram" width="700">
 </p>
 ---
+
 #### Jenkins Installation (User Data)
 **What it does:**
 - Updates packages and installs OpenJDK 17 (required by Jenkins).
