@@ -90,7 +90,11 @@ http://<EC2-Public-IP>:8080 (later accessed via ALB domain)
   
 #### Accessing Jenkins
 Once Terraform apply completes and DNS propagation finishes:
-- Open **https://jenkins.techsaif.gzz.io** in your browser.  
+- Open **https://jenkins.techsaif.gzz.io** in your browser.
+- <p align="center">
+  <img src="./image/jenkins-url.png" alt="LEMP Diagram" width="600">
+</p>
+
 - Retrieve the initial Jenkins admin password from the EC2 instance:
   
   ```bash
