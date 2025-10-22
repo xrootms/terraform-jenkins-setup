@@ -52,14 +52,14 @@
 ## After successful deployment:
 
 🔹**Domain Configuration:**
-- DNS propagation may take up to 30 minutes after updating name servers.
-- The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
+
+- The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record. DNS propagation may take up to 30 minutes after updating name servers.
 <p align="center">
   <img src="./image/Screenshot 2025-10-23 012719.png" alt="LEMP Diagram" width="1000">
 </p>
 
 🔹**SSL Configuration:**
-An ACM Certificate is created for: **jenkins.techsaif.gzz.io**, Validation is done automatically via Route 53 DNS records. Certificate is attached to the ALB for HTTPS traffic
+- An ACM Certificate is created for: **jenkins.techsaif.gzz.io**, Validation is done automatically via Route 53 DNS records. Certificate is attached to the ALB for HTTPS traffic
 
 <p align="center">
   <img src="./image/ACM-arn-copy.png" alt="LEMP Diagram" width="900">
@@ -69,7 +69,7 @@ An ACM Certificate is created for: **jenkins.techsaif.gzz.io**, Validation is do
 ---
   
 🔹**Accessing Jenkins:**
-Once Terraform apply completes and DNS propagation finishes:
+- Once Terraform apply completes and DNS propagation finishes:
 - Open **https://jenkins.techsaif.gzz.io** in your browser.
 - <p align="center">
   <img src="./image/jenkins-url.png" alt="LEMP Diagram" width="700">
