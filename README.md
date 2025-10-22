@@ -59,15 +59,13 @@ Script used: jenkins-runner-script/jenkins-installer.sh
 ## 🔹*Domain Configuration:*
 
 - The **ALB DNS** name is mapped to **jenkins.techsaif.gzz.io** using a Route 53 **A record**.
-- DNS propagation may take up to 30 minutes after updating name servers.
+
 <p align="center">
   <img src="./image/Screenshot 2025-10-23 012719.png" alt="LEMP Diagram" width="1000">
 </p>
 
 ## 🔹*SSL Configuration:*
-- An **ACM** Certificate is created for: **jenkins.techsaif.gzz.io**.
-- Validation is done automatically via Route 53 DNS records.
-- Certificate is attached to the ALB for https traffic.
+- An **ACM** Certificate is created for: **jenkins.techsaif.gzz.io** and attached to the ALB for https traffic.
 
 <p align="center">
   <img src="./image/ACM-arn-copy.png" alt="LEMP Diagram" width="900">
@@ -77,12 +75,13 @@ Script used: jenkins-runner-script/jenkins-installer.sh
 ## 🔹*Accessing Jenkins:*
 - Once Terraform apply completes and DNS propagation finishes:
 - Open **https://jenkins.techsaif.gzz.io** in your browser.
-- <p align="center">
+- 
+<p align="center">
   <img src="./image/jenkins-url.png" alt="LEMP Diagram" width="700">
 </p>
 
 - Retrieve the initial Jenkins admin password from the EC2 instance:
-- <p align="center">
+<p align="center">
   <img src="./image/ssh.png" alt="LEMP Diagram" width="600">
 </p>
   
