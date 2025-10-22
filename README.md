@@ -14,9 +14,7 @@ Before running Terraform:
 <p align="center">
   <img src="./image/hostedzoneimage2.png" alt="LEMP Diagram" width="600">
 </p>
-
 - Name servers updated at the domain registrar
-
   <p align="center">
   <img src="./image/registarupdateimage.png" alt="LEMP Diagram" width="600">
 </p>
