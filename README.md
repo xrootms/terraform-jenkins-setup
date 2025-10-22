@@ -11,13 +11,10 @@ Before running Terraform:
 - A registered domain name (e.g., from GoDaddy, Namecheap, etc.)  
 - Hosted Zone created in Route 53 (`ex:- hosted zone name: techsaif.gzz.io`)
   
-
 <p align="center">
-  <img src="./image/Screenshot 2025-10-20 221909.png" 
-       alt="LEMP Diagram" 
-       width="600" 
-       class="img-border">
+  <img src="./image/Screenshot 2025-10-20 221909.png, ./image/Screenshot 2025-10-20 221736.png" alt="LEMP Diagram" width="600">
 </p>
+
 
 
 - Name servers updated at the domain registrar 
