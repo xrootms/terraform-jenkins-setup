@@ -84,6 +84,8 @@ Script used: jenkins-runner-script/jenkins-installer.sh
 <p align="center">
   <img src="./image/ssh.png" alt="LEMP Diagram" width="600">
 </p>
+
+- Get the initial admin password:
   
   ```bash
   sudo cat /var/lib/jenkins/secrets/initialAdminPassword
