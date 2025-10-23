@@ -43,7 +43,7 @@
    terraform apply
    ```
 
-#### 5. Get ssh connection:
+#### 5. Get ssh connection for EC2:
 <p align="center">
   <img src="./image/apply-copy.png" alt="LEMP Diagram" width="900">
 </p>
