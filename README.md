@@ -2,7 +2,7 @@
 *This project automates the Jenkins CI/CD environment on AWS — using Terraform as Infrastructure-as-Code (IaC). It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.*
 
 <p align="center">
-  <img src="./image/01-diagram-infra-img.jpg" alt="LEMP Diagram" width="600">
+  <img src="./image/01-diagram-infra-img.jpg" alt="LEMP Diagram" width="800">
 </p>
 
 ## Project Overview
@@ -51,7 +51,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 
 ## *Step 2:*
-#### 1. Clone the repo:
+####  Clone the repo:
    ```bash
    git clone https://github.com/xrootms/terraform-jenkins-setup.git
    cd terraform-aws-vpc-ec2
@@ -84,24 +84,31 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 🔹**Hosted zone:**
 
-   The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
+   *The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record
 
 <p align="center">
   <img src="./image/06-Hoted-zone-img.jpg" alt="LEMP Diagram" width="800">
 </p>
 
 
+
+
 🔹**SSL Configuration:**
 
-  An ACM Certificate is created for: jenkins.techsaif.gzz.io and attached to the ALB for https traffic.
+  *An ACM Certificate is created for: jenkins.techsaif.gzz.io and attached to the ALB for https traffic.*
 
 <p align="center">
   <img src="./image/07-ACMimage.png" alt="LEMP Diagram" width="600">
 </p>
 
 
+
+
 🔹**Jenkins Installation (User Data):**
- During EC2 instance creation, a user data script automatically installs and configures Jenkins    and Terraform. Script used: jenkins-runner-script/jenkins-installer.sh
+
+ *During EC2 instance creation, a user data script automatically installs and configures Jenkins    and Terraform. Script used: jenkins-runner-script/jenkins-installer.sh*
+
+
 
 
 🔹**Accessing Jenkins:**
@@ -129,10 +136,10 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 ---  
 **Notes**
-➡️ ACM and ALB must be in the same AWS region
-➡️ DNS propagation may take up to 30 minutes
-➡️ Check ACM validation status in AWS Console → Certificate Manager
-➡️ To avoid unnecessary costs, destroy the infrastructure when no longer needed
+- ➡️ ACM and ALB must be in the same AWS region
+- ➡️ DNS propagation may take up to 30 minutes
+- ➡️ Check ACM validation status in AWS Console → Certificate Manager
+- ➡️ To avoid unnecessary costs, destroy the infrastructure when no longer needed
 
 ```bash
 terraform destroy    
