@@ -1,4 +1,4 @@
-# Automated Jenkins Deployment on AWS using Terraform
+# Automated Jenkins Setup on AWS using Terraform
 *This project automates the Jenkins CI/CD environment on AWS — using Terraform as Infrastructure-as-Code (IaC). It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.*
 
 <p align="center">
@@ -104,7 +104,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 
 
-🔹## *Jenkins Installation (User Data):*
+🔹**Jenkins Installation (User Data):**
 
   - *During EC2 instance creation, a user data script automatically installs and configures Jenkins and Terraform.*
   - **Script used:** jenkins-runner-script/jenkins-installer.sh*
@@ -116,13 +116,13 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 
 
-##🔹**Accessing Jenkins:**
+🔹**Accessing Jenkins:**
 
   - *Once Terraform apply completes and DNS propagation finishes:*
   - *Open https://jenkins.techsaif.gzz.io in your browser.*
 
 <p align="center">
-  <img src="./image/08-jenkins-url.png" alt="LEMP Diagram" width="800">
+  <img src="./image/08-jenkins-url.png" alt="LEMP Diagram" width="900">
 </p>
 
 
