@@ -35,18 +35,18 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 - 2️⃣  In the Domain name field, enter the exact domain name you own (e.g., techsaif.gzz.io)
 - 3️⃣  Select Type → Public hosted zone
 - 4️⃣  Click Create hosted zone
- <p align="center">
-  <img src="./image/02-hostedzoneimage.png" alt="LEMP Diagram" width="300">
+ <p align="left">
+  <img src="./image/02-hostedzoneimage.png" alt="LEMP Diagram" width="400">
 </p>
 
 - 5️⃣ Once you created you will get these four records which is "ns records".
  <p align="center">
-  <img src="./image/03-hostedzoneimage2.png" alt="LEMP Diagram" width="300">
+  <img src="./image/03-hostedzoneimage2.png" alt="LEMP Diagram" width="600">
 </p>
 
 - 6️⃣ Update these ns recode over your domine register's ns recode.
 <p align="center">
-  <img src="./image/04-registarupdateimage.png" alt="LEMP Diagram" width="300">
+  <img src="./image/04-registarupdateimage.png" alt="LEMP Diagram" width="600">
 </p>
 
 
