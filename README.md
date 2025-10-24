@@ -27,7 +27,7 @@ Before Running Terraform, Make sure you have the following prerequisites ready:
 - ➡️ Name Servers updated at your domain registrar
 - ➡️ Public and Private Key
 
-## Step 1: 
+## *Step 1:* 
 ### Setup Hosted Zone :
 To work with this whole setup we need to setup  Route53 and in Route53 we first need to setup our hosted zone.
 
@@ -50,7 +50,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 </p>
 
 
-## *How to Use*
+## *Step 2:*
 #### 1. Clone the repo:
    ```bash
    git clone https://github.com/xrootms/terraform-jenkins-setup.git
@@ -76,6 +76,10 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 #### 5. Get ssh connection for EC2:
 <p align="center">
   <img src="./image/apply-copy.png" alt="LEMP Diagram" width="900">
+</p>
+
+<p align="center">
+  <img src="./image/05-Screenshot 2025-10-20 233003.png" alt="LEMP Diagram" width="600">
 </p>
 
 ---
