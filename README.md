@@ -41,7 +41,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 - 5️⃣ Once you created you will get these four records which is "ns records".
  <p align="center">
-  <img src="./image/03-hostedzoneimage2.png" alt="LEMP Diagram" width="600">
+  <img src="./image/03-hostedzoneimage2.png" alt="LEMP Diagram" width="800">
 </p>
 
 - 6️⃣ Update these ns recode over your domine register's ns recode.
@@ -82,7 +82,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 ---
 ## *After successful deployment:*
 
-🔹**Hosted zone:**
+##🔹**Hosted zone:**
 
   - *The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record*
 
@@ -104,14 +104,19 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 
 
-🔹**Jenkins Installation (User Data):**
+##🔹**Jenkins Installation (User Data):**
 
-  - *During EC2 instance creation, a user data script automatically installs and configures Jenkins    and Terraform. Script used: jenkins-runner-script/jenkins-installer.sh*
+  - *During EC2 instance creation, a user data script automatically installs and configures Jenkins and Terraform.
+  - **Script used:** jenkins-runner-script/jenkins-installer.sh*
+  - 
+<p align="center">
+  <img src="./image/Screenshot 2025-10-24 191732.png" alt="LEMP Diagram" width="400">
+</p>
 
 
 
 
-🔹**Accessing Jenkins:**
+##🔹**Accessing Jenkins:**
 
   - *Once Terraform apply completes and DNS propagation finishes:*
   - *Open https://jenkins.techsaif.gzz.io in your browser.*
