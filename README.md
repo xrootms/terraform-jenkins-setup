@@ -104,11 +104,11 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 
 
-##🔹**Jenkins Installation (User Data):**
+🔹## *Jenkins Installation (User Data):*
 
   - *During EC2 instance creation, a user data script automatically installs and configures Jenkins and Terraform.
   - **Script used:** jenkins-runner-script/jenkins-installer.sh*
-  - 
+    
 <p align="center">
   <img src="./image/Screenshot 2025-10-24 191732.png" alt="LEMP Diagram" width="400">
 </p>
