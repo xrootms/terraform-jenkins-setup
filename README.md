@@ -2,23 +2,42 @@
 *This project automates the Jenkins CI/CD environment on AWS — using Terraform as Infrastructure-as-Code (IaC). It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.*
 
 <p align="center">
-  <img src="./image/01-*" alt="LEMP Diagram" width="600">
+  <img src="./image/01-diagram-infra-img.jpg" alt="LEMP Diagram" width="600">
 </p>
 
-## *Project Overview*
-*This Terraform setup builds a fully functional Jenkins environment with:*
-- Scalable AWS infrastructure (VPC, subnets, security groups)
-- Automated Jenkins installation via user data script
-- Load balancing and HTTPS termination using AWS ALB + ACM
-- Custom domain integration using Route 53
+## Project Overview
+The setup automates the deployment of a Jenkins server behind an Application Load Balancer (ALB) with a valid SSL certificate (ACM), using Terraform Infrastructure as Code (IaC).
 
-## *Prerequisites*
-*Before Running Terraform, Make sure you have the following prerequisites ready:*
-- **Terraform v1.3+** (recommended)  
-- **AWS CLI** configured with proper IAM credentials  
-- **A registered domain name** (e.g., from GoDaddy, Namecheap, etc.)  
-- **Hosted Zone** created in Route 53  > Example: `hosted zone name: techsaif.gzz.io`
-- **Name servers** updated at your domain registrar
+Main components:
+➡️ Custom VPC with public subnets, Internet Gateway, and route tables
+➡️ Security Groups for Jenkins and ALB
+➡️ EC2 Instance for Jenkins (with User Data installation script)
+➡️ Target Group and Application Load Balancer (ALB) setup
+➡️ ACM Certificate for HTTPS
+➡️ DNS Integration with Route 53
+
+## Prerequisites
+Before Running Terraform, Make sure you have the following prerequisites ready:
+➡️ Terraform v1.3+ (recommended)
+➡️ AWS CLI configured with proper IAM credentials
+➡️ A registered domain name (e.g., from GoDaddy, Namecheap, etc.)
+➡️ Hosted Zone created in Route 53 — Example: hosted zone name: techsaif.gzz.io
+➡️ Name Servers updated at your domain registrar
+➡️ Public and Private Key
+
+## Step 1: 
+### Setup Hosted Zone :
+To work with this whole setup we need to setup  Route53 and in Route53 we first need to setup our hosted zone.
+
+1️⃣  Navigate to Route 53 → Hosted zones → Create hosted zone
+2️⃣  In the Domain name field, enter the exact domain name you own (e.g., techsaif.gzz.io)
+3️⃣  Select Type → Public hosted zone
+4️⃣  Click Create hosted zone
+
+<p align="center">
+  <img src="./image/02-hostedzoneimage.png" alt="LEMP Diagram" width="600">
+</p>
+
 
 ## *How to Use*
 #### 1. Clone the repo:
