@@ -11,9 +11,7 @@ The setup automates the deployment of a Jenkins server behind an Application Loa
 #### Main components:
 
 ➡️ Custom VPC with public subnets, Internet Gateway, and route tables
-
 ➡️ Security Groups for Jenkins and ALB
-
 ➡️ EC2 Instance for Jenkins (with User Data installation script)
 
 ➡️ Target Group and Application Load Balancer (ALB) setup
