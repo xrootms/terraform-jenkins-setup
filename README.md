@@ -2,7 +2,7 @@
 *This project automates the Jenkins CI/CD environment on AWS — using Terraform as Infrastructure-as-Code (IaC). It provisions all networking, security, and application components, integrating with a custom domain and SSL certificate for secure web access.*
 
 <p align="center">
-  <img src="./image/diagram-infra-img.jpg" alt="LEMP Diagram" width="600">
+  <img src="./image/01-*" alt="LEMP Diagram" width="600">
 </p>
 
 ## *Project Overview*
