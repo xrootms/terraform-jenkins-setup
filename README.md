@@ -85,8 +85,21 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 ---
 ## *After successful deployment:*
 
-###🔹Hosted zone:
+🔹**Hosted zone:**
    The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
+
+<p align="center">
+  <img src="./image/06-Hoted-zone-img.jpg" alt="LEMP Diagram" width="900">
+</p>
+
+
+🔹**SSL Configuration:**
+  An ACM Certificate is created for: jenkins.techsaif.gzz.io and attached to the ALB for https traffic.
+
+<p align="center">
+  <img src="./image/07-ACMimage.png" alt="LEMP Diagram" width="900">
+</p>
+
 
 ### 🔹*Jenkins Installation (User Data)*
 
