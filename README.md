@@ -86,6 +86,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 ## *After successful deployment:*
 
 🔹**Hosted zone:**
+
    The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record.
 
 <p align="center">
@@ -94,6 +95,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 
 🔹**SSL Configuration:**
+
   An ACM Certificate is created for: jenkins.techsaif.gzz.io and attached to the ALB for https traffic.
 
 <p align="center">
@@ -101,40 +103,26 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 </p>
 
 
-### 🔹*Jenkins Installation (User Data)*
+🔹**Jenkins Installation (User Data):**
+ During EC2 instance creation, a user data script automatically installs and configures Jenkins    and Terraform. Script used: jenkins-runner-script/jenkins-installer.sh
 
-- During EC2 instance creation, a user data script automatically installs and configures Jenkins and Terraform.
-Script used: jenkins-runner-script/jenkins-installer.sh
 
-### 🔹*Domain Configuration:*
+🔹**Accessing Jenkins:**
 
-- The **ALB DNS** name is mapped to **jenkins.techsaif.gzz.io** using a Route 53 **A record**.
-
-<p align="center">
-  <img src="./image/Screenshot 2025-10-23 012719.png" alt="LEMP Diagram" width="1000">
-</p>
-
-### 🔹*SSL Configuration:*
-- An **ACM** Certificate is created for: **jenkins.techsaif.gzz.io** and attached to the ALB for https traffic.
+  *Once Terraform apply completes and DNS propagation finishes:*
+  *Open https://jenkins.techsaif.gzz.io in your browser.*
 
 <p align="center">
-  <img src="./image/ACM-arn-copy.png" alt="LEMP Diagram" width="900">
+  <img src="./image/08-jenkins-url.png" alt="LEMP Diagram" width="900">
 </p>
 
+
+  *Retrieve the initial Jenkins admin password from the EC2 instance:*
   
-### 🔹*Accessing Jenkins:*
-- Once Terraform apply completes and DNS propagation finishes:
-- Open **https://jenkins.techsaif.gzz.io** in your browser.
-- 
 <p align="center">
-  <img src="./image/jenkins-url.png" alt="LEMP Diagram" width="700">
+  <img src="./image/09-Screenshot 2025-10-20 233210.png" alt="LEMP Diagram" width="900">
 </p>
-
-- Retrieve the initial Jenkins admin password from the EC2 instance:
-<p align="center">
-  <img src="./image/ssh.png" alt="LEMP Diagram" width="600">
-</p>
-
+  
 - Get the initial admin password:
   
   ```bash
@@ -143,11 +131,12 @@ Script used: jenkins-runner-script/jenkins-installer.sh
 
 
 ---  
-### *Notes*
-- *ACM and ALB must be in the same AWS region.*
-- *DNS propagation can take up to 30 minutes.*
-- *Verify ACM validation status under AWS Console → Certificate Manager.*
-- *To avoid incurring charges, destroy the infrastructure when no longer needed:*
+**Notes**
+➡️ ACM and ALB must be in the same AWS region
+➡️ DNS propagation may take up to 30 minutes
+➡️ Check ACM validation status in AWS Console → Certificate Manager
+➡️ To avoid unnecessary costs, destroy the infrastructure when no longer needed
+
 ```bash
 terraform destroy    
 ```
