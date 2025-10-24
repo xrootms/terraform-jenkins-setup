@@ -27,7 +27,7 @@
    cd terraform-aws-vpc-ec2
    ```
 
-#### 2. Copy and edit variables: (Update variable values as needed — VPC CIDR, Public key, region, etc.)
+#### 2. Copy and edit variables: (Update variable values as needed — VPC, CIDR, public key, region, etc.)
    ```bash
    cp terraform.tfvars.example terraform.tfvars
    ```
