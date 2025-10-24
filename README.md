@@ -84,10 +84,10 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 🔹**Hosted zone:**
 
-    *The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record
+  - *The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record*
 
 <p align="center">
-  <img src="./image/06-Hoted-zone-img.jpg" alt="LEMP Diagram" width="800">
+  <img src="./image/06-Hoted-zone-img.jpg" alt="LEMP Diagram" width="900">
 </p>
 
 
@@ -95,10 +95,10 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 🔹**SSL Configuration:**
 
-   *An ACM Certificate is created for: jenkins.techsaif.gzz.io and attached to the ALB for https traffic.*
+  - *An ACM Certificate is created for: jenkins.techsaif.gzz.io and attached to the ALB for https traffic.*
 
 <p align="center">
-  <img src="./image/07-ACMimage.png" alt="LEMP Diagram" width="800">
+  <img src="./image/07-ACMimage.png" alt="LEMP Diagram" width="900">
 </p>
 
 
@@ -106,15 +106,15 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 🔹**Jenkins Installation (User Data):**
 
-   *During EC2 instance creation, a user data script automatically installs and configures Jenkins    and Terraform. Script used: jenkins-runner-script/jenkins-installer.sh*
+  - *During EC2 instance creation, a user data script automatically installs and configures Jenkins    and Terraform. Script used: jenkins-runner-script/jenkins-installer.sh*
 
 
 
 
 🔹**Accessing Jenkins:**
 
-   *Once Terraform apply completes and DNS propagation finishes:*
-   *Open https://jenkins.techsaif.gzz.io in your browser.*
+  - *Once Terraform apply completes and DNS propagation finishes:*
+  - *Open https://jenkins.techsaif.gzz.io in your browser.*
 
 <p align="center">
   <img src="./image/08-jenkins-url.png" alt="LEMP Diagram" width="800">
@@ -127,8 +127,8 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
   <img src="./image/09-Screenshot 2025-10-20 233210.png" alt="LEMP Diagram" width="700">
 </p>
   
- - Get the initial admin password:
-  
+ - *Get the initial admin password:*
+   
   ```bash
   sudo cat /var/lib/jenkins/secrets/initialAdminPassword
   ```
