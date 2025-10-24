@@ -82,7 +82,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 ---
 ## *After successful deployment:*
 
-##🔹**Hosted zone:**
+🔹**Hosted zone:**
 
   - *The ALB DNS name is mapped to jenkins.techsaif.gzz.io using a Route 53 A record*
 
@@ -106,11 +106,11 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 
 🔹## *Jenkins Installation (User Data):*
 
-  - *During EC2 instance creation, a user data script automatically installs and configures Jenkins and Terraform.
+  - *During EC2 instance creation, a user data script automatically installs and configures Jenkins and Terraform.*
   - **Script used:** jenkins-runner-script/jenkins-installer.sh*
     
 <p align="center">
-  <img src="./image/Screenshot 2025-10-24 191732.png" alt="LEMP Diagram" width="400">
+  <img src="./image/Screenshot 2025-10-24 191732.png" alt="LEMP Diagram" width="800">
 </p>
 
 
