@@ -74,12 +74,9 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
    ```
 
 #### 5. Get ssh connection for EC2:
-<p align="center">
-  <img src="./image/apply-copy.png" alt="LEMP Diagram" width="900">
-</p>
 
 <p align="center">
-  <img src="./image/05-Screenshot 2025-10-20 233003.png" alt="LEMP Diagram" width="600">
+  <img src="./image/05-Screenshot 2025-10-20 233003.png" alt="LEMP Diagram" width="700">
 </p>
 
 ---
