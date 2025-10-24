@@ -35,7 +35,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 - 2️⃣  In the Domain name field, enter the exact domain name you own (e.g., techsaif.gzz.io)
 - 3️⃣  Select Type → Public hosted zone
 - 4️⃣  Click Create hosted zone
- <p align="left">
+ <p align="center">
   <img src="./image/02-hostedzoneimage.png" alt="LEMP Diagram" width="400">
 </p>
 
@@ -76,7 +76,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 #### 5. Get ssh connection for EC2:
 
 <p align="center">
-  <img src="./image/05-Screenshot 2025-10-20 233003.png" alt="LEMP Diagram" width="700">
+  <img src="./image/05-Screenshot 2025-10-20 233003.png" alt="LEMP Diagram" width="900">
 </p>
 
 ---
