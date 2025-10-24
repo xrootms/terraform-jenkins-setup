@@ -8,16 +8,23 @@
 ## Project Overview
 The setup automates the deployment of a Jenkins server behind an Application Load Balancer (ALB) with a valid SSL certificate (ACM), using Terraform Infrastructure as Code (IaC).
 
-Main components:
+#### Main components:
+
 ➡️ Custom VPC with public subnets, Internet Gateway, and route tables
+
 ➡️ Security Groups for Jenkins and ALB
+
 ➡️ EC2 Instance for Jenkins (with User Data installation script)
+
 ➡️ Target Group and Application Load Balancer (ALB) setup
+
 ➡️ ACM Certificate for HTTPS
+
 ➡️ DNS Integration with Route 53
 
 ## Prerequisites
 Before Running Terraform, Make sure you have the following prerequisites ready:
+
 ➡️ Terraform v1.3+ (recommended)
 ➡️ AWS CLI configured with proper IAM credentials
 ➡️ A registered domain name (e.g., from GoDaddy, Namecheap, etc.)
@@ -35,7 +42,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 4️⃣  Click Create hosted zone
 
 <p align="center">
-  <img src="./image/02-hostedzoneimage.png" alt="LEMP Diagram" width="600">
+  <img src="./image/02-hostedzoneimage.png" alt="LEMP Diagram" width="300">
 </p>
 
 
