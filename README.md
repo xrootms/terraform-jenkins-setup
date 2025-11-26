@@ -54,7 +54,7 @@ To work with this whole setup we need to setup  Route53 and in Route53 we first 
 ####  Clone the repo:
    ```bash
    git clone https://github.com/xrootms/terraform-jenkins-setup.git
-   cd terraform-aws-vpc-ec2
+   cd terraform-jenkins-setup
    ```
 
 #### 2. Copy and edit variables: (Update variable values as needed — VPC, CIDR, public key, region, etc.)
